@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giovana Marques Silva's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="about">
+    <span class="logo">Dev</span>
+    <div class="social-links">
+      <a href="https://github.com/Giovanaasilvaa" target="_blank" title="GitHub" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/giovana-marques-silva-aa8595297" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:giovanamarquessilva24@gmail.com" title="Gmail" aria-label="Gmail">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Modal Container -->
+  <div id="video-modal" style="display: none;">
+    <div id="video-container" class="modal-content">
+      <span id="close-btn" class="close-btn">&times;</span>
+      <video id="video-player" width="560" height="315" controls>
+        <source src="img/projects.mp4" type="video/mp4">
+        Your browser does not support videos.
+      </video>
+    </div>
+  </div>
+
+  <main>
+    <div id="particles-index"></div>
+    <section class="welcome">
+      <div class="line1"></div>
+      <h1>Gi's <br> Portfolio</h1>
+      <div class="line2"></div>
+      <br>
+      <p class="msg" id="typewriter" rows="5" cols="60"></p>
+
+      <div class="buttons-container">
+        <a href="about.html" class="btn-saiba-mais">Learn More</a>
+
+        <a href="#" id="open-video-btn" class="btn-video">
+          <img src="img/play-button.png" alt="Video icon"> Watch video
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/11575112a3.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-index", {
+      "particles": {
+        "number": {
+          "value": 25,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "shape": {
+          "type": "star"
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true
+        },
+        "size": {
+          "value": 4,
+          "random": true
+        },
+        "move": {
+          "enable": true,
+          "speed": 0.5,
+          "direction": "none",
+          "straight": false,
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": false
+          },
+          "onclick": {
+            "enable": false
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+
+</html>
