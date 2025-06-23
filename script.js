@@ -3,29 +3,31 @@ document.addEventListener("DOMContentLoaded", function () {
     let openVideoBtn = document.getElementById("open-video-btn");
     let videoModal = document.getElementById("video-modal");
     let videoContainer = document.getElementById("video-container");
-    let videoPlayer = document.getElementById("video-player");
     let closeBtn = document.getElementById("close-btn");
+    let iframe = videoContainer.querySelector('iframe');
+    
+    // URL original do vídeo sem autoplay
+    const videoUrl = "https://www.youtube.com/embed/3mmhsNYM3k4";
+    
+    // Função para fechar o modal e resetar o vídeo
+    function fecharVideoModal() {
+        videoModal.style.display = "none";
+        // Remove o autoplay e reseta o iframe
+        iframe.src = videoUrl;
+    }
 
     openVideoBtn.addEventListener("click", function (event) {
         event.preventDefault(); 
-
-       
         videoModal.style.display = "flex";
-        videoPlayer.play(); 
+        // Adiciona autoplay=1 à URL do vídeo
+        iframe.src = videoUrl + "?autoplay=1";
     });
 
-    
-    closeBtn.addEventListener("click", function () {
-        videoModal.style.display = "none";
-        videoPlayer.pause(); 
-        videoPlayer.currentTime = 0; 
-    });
+    closeBtn.addEventListener("click", fecharVideoModal);
 
     window.addEventListener("click", function (event) {
         if (event.target === videoModal) {
-            videoModal.style.display = "none";
-            videoPlayer.pause();
-            videoPlayer.currentTime = 0;
+            fecharVideoModal();
         }
     });
 });
@@ -54,8 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   type();
 });
-
-
 
 // Inicia a animação 
 const observer = new IntersectionObserver((entries) => {
