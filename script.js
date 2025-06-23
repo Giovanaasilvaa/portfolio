@@ -66,7 +66,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove('ativo');
     }
   });
-}, { threshold: 0.3 });
+}, { threshold: 0.1});
 
 const sectionsToObserve = [
   document.getElementById('technology'),
