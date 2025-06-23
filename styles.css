@@ -1097,17 +1097,12 @@ itle-projects {
   }
 
    .title-projects {
-    margin: 0 auto 30px auto;
     font-size: 2rem;
   }
-  .section-pro.ativo .title-projects {
-  animation: fadeIn 1s ease-out forwards;
-}
-
+ 
 }
 
   
-
 /*Footer*/
 .footer {
   width: 100%; /* pega toda a largura da página */
@@ -1223,4 +1218,5 @@ itle-projects {
     transition: 0.3s;
   }
 }
+
 
