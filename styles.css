@@ -428,6 +428,7 @@ li,a {
   }
 }
 
+
 @media (max-width: 480px) {
   .welcome h1 {
     font-size: 2rem;
@@ -446,7 +447,25 @@ li,a {
   .social-links i{
     font-size: 18px;
   }
+
+  /* Estilos para o vídeo em mobile */
+  #video-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  #video-container iframe {
+    width: 100%;
+    height: 200px; /* Altura reduzida para mobile */
+  }
+  
+  .close-btn {
+    font-size: 24px;
+    right: 10px;
+    top: 10px;
+  }
 }
+
 
 /*-------------------------*/
 /*Sobremim*/
