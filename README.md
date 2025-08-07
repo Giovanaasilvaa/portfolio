@@ -1,6 +1,10 @@
 <h1 align="center">🎨 Portfolio - Personal Website with HTML, CSS & JavaScript</h1>
 
-<p align="center"><em>Showcase of my skills, projects, and contact information with a modern, responsive design.</em></p>
+<p align="center"><em>Showcase of my skills, projects, and contact information with a modern, responsive design.
+</em></p>
+<p align="center"><em>https://giovanaasilvaa.github.io/portfolio</em></p>
+
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/last%20commit-june-blue?style=flat-square" />
